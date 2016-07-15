@@ -13,15 +13,27 @@
 <body>
     <section class="row">
         <div class="medium-12 columns">
-
+            <div id="viewport" style="width: 640px; height: 500px;">
                 <canvas id="nice" width="1024px;" height="1290px"></canvas>
 
             </div>
-
+        </div>
     </section>
     <div class="medium-12 columns love_heart"></div>
 
 
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            fillBanner('#banner');
+            var anim = animate('#nice');
+            setTimeout(function() {
+                anim.stop();
+            }, 60000);
+        });
+
+    </script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
