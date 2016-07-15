@@ -45,3 +45,23 @@ body {
     background: inherit;
     border-radius: 100%;
 }
+@-webkit-keyframes love {
+    0% {
+        top: 110%
+    }
+}
+@-moz-keyframes love {
+    0% {
+        top: 110%
+    }
+}
+@-ms-keyframes love {
+    0% {
+        top: 110%;
+    }
+}
+@keyframes love {
+    0% {
+        top: 110%;
+    }
+}
