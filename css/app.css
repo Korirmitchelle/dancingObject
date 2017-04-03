@@ -2,10 +2,15 @@
     overflow: visible;
 }
 body {
-    width: 100%;
-    background-image: url(../img/fff.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
+   
+/*making background fill screen*/
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(128, 0, 0, 0.7)) no-repeat center center fixed,url(../img/Cute.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+    background-repeat:no-repeat;
+    
 }
 .love_heart {
     position: relative;
@@ -45,6 +50,18 @@ body {
     background: inherit;
     border-radius: 100%;
 }
+
+
+.words{ 
+text-align: center;
+    padding-top: 45px;
+color: white;
+    font-family: 'Macondo', cursive;
+
+font-size: 25px;
+}
+
+
 @-webkit-keyframes love {
     0% {
         top: 110%
